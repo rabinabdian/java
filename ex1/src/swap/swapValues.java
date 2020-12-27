@@ -19,8 +19,9 @@ public class swapValues {
 		num1 = num2;
 		num2 = temp;
 
-		System.out.println("before swicth num1 : " + num1 + " num2 : " + num2);
+		System.out.println("after swicth num1 : " + num1 + " num2 : " + num2);
 
 	}
 
+	
 }
