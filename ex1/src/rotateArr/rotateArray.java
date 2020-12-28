@@ -11,24 +11,30 @@ public class rotateArray {
 
 		int [] arr = {1,2,3,4,5};
 		int rotation = 6;
-		rotateArrayLocation(arr , rotation);
+
+		System.out.println("--------before Rotate-----------");
+	       
+		printArr(arr);
+		
 		int [] afterRotate = rotateArrayLocationA(arr , rotation);
-		System.out.println("-------------------");
+		System.out.println("--------after Rotate-----------");
        
 		printArr(afterRotate);
+
+	}
+
+	private static void printArr(int[] arr) {
+	
 		for(int i = 0; i< arr.length; i++){  
             System.out.print(arr[i] + " ");  
         } 
+		System.out.println();
+
 	}
 
-	private static void printArr(int[] afterRotate) {
+	public static int[] rotateArrayLocationA(int[] arr, int rotateLeft) {
 		// TODO Auto-generated method stub
-		
-	}
-
-	public static int[] rotateArrayLocationA(int[] arr, int n) {
-		// TODO Auto-generated method stub
-		  for(int i = 0; i < n; i++){  
+		  for(int i = 0; i < rotateLeft; i++){  
 	            int j, first;  
 	            //Stores the first element of the array  
 	            first = arr[0];  
@@ -41,32 +47,7 @@ public class rotateArray {
 	        }  
 		return arr;
 	}
-
-	private static void rotateArrayLocation(int[] arr, int n) {
-		// TODO Auto-generated method stub
-        System.out.println("Original array: ");  
-        for (int i = 0; i < arr.length; i++) {  
-            System.out.print(arr[i] + " ");  
-        }  
-        //Rotate the given array by n times toward left  
-        for(int i = 0; i < n; i++){  
-            int j, first;  
-            //Stores the first element of the array  
-            first = arr[0];  
-            for(j = 0; j < arr.length-1; j++){  
-                //Shift element of array by one  
-                arr[j] = arr[j+1];  
-            }  
-            //First element of array will be added to the end  
-            arr[j] = first;  
-        }  
-        System.out.println();  
-        //Displays resulting array after rotation  
-        System.out.println("Array after left rotation: ");  
-        for(int i = 0; i< arr.length; i++){  
-            System.out.print(arr[i] + " ");  
-        }  
-    }  
+	
 	@Test
 	   public static void testRotate() {	
 		int [] arr = {1,2,3,4,5};
