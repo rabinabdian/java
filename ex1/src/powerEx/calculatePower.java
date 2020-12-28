@@ -27,7 +27,7 @@ public class calculatePower {
 		int temp = num;
 
 		for (int i = 0; i < pow; i++) {
-			temp *=1/num;
+			temp =temp*1/num;
 		}
 		System.out.println(" value of "+num+ "raised to power of "+pow+" is " +1/temp);
 	}
