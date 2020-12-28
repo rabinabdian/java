@@ -25,10 +25,11 @@ public class calculatePower {
 	private static void calculatePow(int num, int pow) {
 		// TODO Auto-generated method stub
 		int temp = num;
-		for (int i = 1; i < pow; i++) {
-			temp *=num;
+
+		for (int i = 0; i < pow; i++) {
+			temp *=1/num;
 		}
-		System.out.println(" value of "+num+ "raised to power of "+pow+" is " + temp);
+		System.out.println(" value of "+num+ "raised to power of "+pow+" is " +1/temp);
 	}
 	
 
