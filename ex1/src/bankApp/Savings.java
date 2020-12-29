@@ -7,9 +7,9 @@ public class Savings extends Account{
 	int safetyDepositBoxID;
 	int safetyDepositBoxKey;
 	
-	public Savings(String name) {
+	public Savings(String name , String sSN , double initDeposit) {
 		// TODO Auto-generated constructor stub
-		super(name);
+		super(name,sSN,initDeposit);
 		
 		System.out.println("NEW SAVING ACCOUNT");
 	}

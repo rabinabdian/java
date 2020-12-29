@@ -1,4 +1,4 @@
-package rotateArr;
+package ex1.src.rotateArr;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,8 @@ import org.junit.Test;
 
 public class rotateArray {
 
-	public static void main(String[] args) {
+
+	public static <String> void main(String[] args) {
 
 		int [] arr = {1,2,3,4,5};
 		int rotation = 6;
@@ -49,7 +50,7 @@ public class rotateArray {
 	}
 	
 	@Test
-	   public static void testRotate() {	
+	   public  void testRotate() {	
 		int [] arr = {1,2,3,4,5};
 		int rotation = 6;
 		int [] afterRotate = {2,3,4,5,1};
